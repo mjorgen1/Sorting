@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.5.1)
+project(sort)
+file(GLOB SOURCES "*.cpp")
+message(STATUS ${SOURCES})
+file(GLOB HEADERS "*.h")
+message(STATUS ${HEADERS})
+add_definitions(-g)
+add_executable(sort ${SOURCES} ${HEADERS})
